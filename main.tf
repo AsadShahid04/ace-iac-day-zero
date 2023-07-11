@@ -95,5 +95,16 @@ terraform {
       version = "~>2.22.0"
     }
   }
+
+# Create an AWS VPC for Aviatrix Transit FireNet
+resource "aviatrix_vpc" "AVX_TR_FNET1_VPC" {
+    cloud_type = 1
+    account_name = var.aws_account_name
+    name = var.firenet_vpc_name
+    aviatrix_transit_vpc = false
+    aviatrix_firenet_vpc = true
+    region = var.aws_region
+    cidr = var.transit_firenet_cidr
+}
   required_version = ">= 1.0.0"
 }
