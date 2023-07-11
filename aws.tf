@@ -1,3 +1,4 @@
+*/
 ##################################################################
 # Data source to get AMI details
 ##################################################################
@@ -68,3 +69,4 @@ output "aws_spoke1_bastion_public_ip" {
 output "aws_spoke1_bastion_private_ip" {
   value = module.aws_spoke_bastion.private_ip
 }
+/*
