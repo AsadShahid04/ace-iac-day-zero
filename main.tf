@@ -87,7 +87,6 @@ resource "aviatrix_segmentation_network_domain" "BU2" {
   depends_on    = [aviatrix_segmentation_network_domain.BU1, aviatrix_segmentation_network_domain.BU2]
 } */
 
-*/
 
 terraform {
   required_providers {
