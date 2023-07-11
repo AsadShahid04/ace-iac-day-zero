@@ -1,3 +1,4 @@
+/*
 # Spoke Ubuntu VM 2
 
 locals {
@@ -110,3 +111,5 @@ resource "azurerm_linux_virtual_machine" "azure_spoke2_vm" {
 output "azure_spoke2_app_private_ip" {
   value = azurerm_linux_virtual_machine.azure_spoke2_vm.private_ip_address
 }
+
+*/
