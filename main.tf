@@ -5,7 +5,7 @@ terraform {
       version = "~>2.22.0"
     }
   }
-
+}
 # Create an AWS VPC
 resource "aviatrix_vpc" "aws_vpc" {
   cloud_type           = 1
