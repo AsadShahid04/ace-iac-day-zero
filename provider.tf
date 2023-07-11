@@ -29,3 +29,8 @@ provider "aviatrix" {
     skip_version_validation = true
     verify_ssl_certificate  = false
 }
+
+provider "aws" {
+  alias  = "ohio"
+  region = var.aws_spoke1_region
+}
