@@ -1,3 +1,5 @@
+/*
+
 provider "aviatrix" {
   controller_ip = var.controller_ip
   username      = var.username
@@ -16,4 +18,14 @@ provider "azurerm" {
   client_id                  = var.azure_client_id
   client_secret              = var.azure_client_secret
   tenant_id                  = var.azure_tenant_id
+}
+
+*/
+
+provider "aviatrix" {
+    controller_ip = var.controller_ip
+    username = var.username
+    password = var.password
+    skip_version_validation = true
+    verify_ssl_certificate  = false
 }
