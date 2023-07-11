@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    aviatrix = {
-      source = "AviatrixSystems/aviatrix"
-      version = "~>2.22.0"
-    }
-  }
-}
-
 // ACE-IAC Core Aviatrix Infrastructure
 
 # Private Key creation
